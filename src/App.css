@@ -1,0 +1,106 @@
+.main-background {
+  background-color: rgba(196, 190, 197, 0.342);
+  transform: translateY(40%);
+  backdrop-filter: blur(1em);
+  border-radius: 8px;
+  width:900px;
+  height:70vh;
+  box-shadow: 1px 1px 8px 1px rgba(37, 37, 37, 0.466);
+
+}
+/* 
+.input-search {
+  border:none;
+  background: rgb(56, 50, 56);
+  font-size: large;
+  width:100%;
+  
+  margin-right:2px;
+  outline: none;
+  color: rgb(140, 156, 170);
+}
+
+.div-search {
+  display: flex;
+  justify-content: space-between;
+  height:37px;
+  border-radius: 5px;;
+  padding: 10px;
+  background: rgb(56, 50, 56);
+  
+}
+
+.main{
+  padding: 25px;
+}
+
+.point-cursor {
+  cursor:pointer
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.main-content-left {
+  background: red;
+}
+
+.main-content-right {
+  background: orange;
+  width: 400px;
+}
+
+.image-view {
+  border: 4px dashed rgb(13, 126, 160);
+  width:400px;
+  height:50vh;
+  padding-top: 6px;
+  padding-left: 6px;
+  object-fit: fill;
+}
+
+.img-image-view {
+  width: 380px;
+  height: 300px;
+  object-fit: fill;
+}
+
+.width-input-label {
+  width:300px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  padding: 8px;
+  font-size: larger;
+}
+
+.height-input-label {
+  width: 300px;  w-80 flex justify-between mb-1.5 p-2 text-lg
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  padding: 8px;
+  font-size: larger;
+}
+
+.width-height-input {
+width: 70px;
+height:5vh;
+padding: 2px;
+border-radius: 5px;
+
+}
+
+.button-input {
+  background: orangered;  bg-yellow-400 flex justify-center
+  display: flex;
+  justify-content: center;
+}
+
+.width-height-button {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 0px 5px 0px 5px;
+} */
