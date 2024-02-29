@@ -54,22 +54,22 @@ function Home() {
      
     <div className="p-8">
       
-      <div className="flex justify-between p-2 bg-gray-700 rounded " >
+      <div className="movetxt flex justify-between p-2 bg-gray-700 rounded " >
         <input type="search" onChange={(e)=>setSearchUrl(e.target.value)} value={searchUrl} className='w-full mr-0.5 outline-none text-blue-50 bg-gray-700 ' placeholder="Enter Image Url to Compress"/>
-        <i className='fa fa-search fa-2x mb-1 cursor-pointer text-teal-400'></i>
+       { searchUrl ==="" ? <i className='fa fa-search fa-2x mb-1 cursor-pointer text-teal-400'></i> : <i className='fa fa-close fa-2x mb-1 cursor-pointer text-teal-400' onClick={()=>setSearchUrl("")}></i>}
       </div>
       <div className="flex justify-center my-5">
           <SearchImage searchUrl={searchUrl}/>
           <div className=' w-96 pt-10'>
              <Operations width={width} height={height} setHeight={setHeight} setWidth={setWidth}/>
              <div className='flex flex-col my-10 pl-4'>
-                <button onClick={convertImage} className='bg-purple-two hover:bg-purple-one text-name-color hover:text-white font-bold py-2 px-4 border border-blue-700 rounded mb-8 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none'>{converting==="Converting" ? <Loader/> : converting}</button>
-                <button onClick={()=>setPreview(true)} className='bg-purple-two hover:bg-purple-one hover:text-white text-name-color font-bold py-2 px-4 border border-blue-700 rounded mb-8 transition ease-in-out delay-150 hover:scale-105  duration-300'>Preview Image</button>
+                <button onClick={convertImage} className='movetxt bg-purple-two hover:bg-purple-one text-name-color hover:text-white font-bold py-2 px-4 border border-blue-700 rounded mb-8 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none'>{converting==="Converting" ? <Loader/> : converting}</button>
+                <button onClick={()=>setPreview(true)} className='movetxt bg-purple-two hover:bg-purple-one hover:text-white text-name-color font-bold py-2 px-4 border border-blue-700 rounded mb-8 transition ease-in-out delay-150 hover:scale-105  duration-300'>Preview Image</button>
              </div>
           </div>
       </div>
       <div className='flex justify-center'>
-        <button className='bg-purple-two hover:bg-purple-one text-name-color hover:text-white text-font-bold py-2 w-1/2 px-4 border border-blue-700 rounded mb-8 transition ease-in-out delay-150 hover:scale-105  duration-300'>
+        <button className='movetxt bg-purple-two hover:bg-purple-one text-name-color hover:text-white text-font-bold py-2 w-1/2 px-4 border border-blue-700 rounded mb-8 transition ease-in-out delay-150 hover:scale-105  duration-300'>
          <a href={url} download="imge.webp"> <i class="fa fa-download" aria-hidden="true"></i> Download</a>
         </button>
       </div>

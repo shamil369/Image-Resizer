@@ -6,7 +6,7 @@ function Operations({width,height,setHeight,setWidth}) {
   console.log("height value",height)
   return (
              <div>
-                <div className='w-96 flex justify-between mb-1.5 pl-6 items-center'>
+                <div className='movetxt w-96 flex justify-between mb-1.5 pl-6 items-center'>
                   <label className='text-lg font-bold'>Width:</label>
                   <div className=' flex justify-center'>
                     <button onMouseDown={()=>width>1 && setWidth(width-1)} className='rounded-md p-1.5 my-1.5 me-4 mx-1.5 bg-red-700 hover:bg-teal-800 transform transition duration-1000 hover:scale-105'><i className='fa fa-minus fa-2x hover:text-slate-400'></i></button>
@@ -14,7 +14,7 @@ function Operations({width,height,setHeight,setWidth}) {
                     <button onMouseDown={()=>width<1000 && setWidth(Number(width)+1)} className='rounded-md p-1.5 my-1.5 mx-1.5 bg-red-700 hover:bg-teal-800 transform transition duration-1000 hover:scale-105'><i className='fa fa-plus fa-2x hover:text-slate-400'></i></button>
                   </div>
                 </div>
-                <div className='w-96 flex justify-between mb-1.5 pl-6 items-center'>
+                <div className='movetxt w-96 flex justify-between mb-1.5 pl-6 items-center'>
                   <label className='text-lg font-bold'>Height:</label>
                   <div className=' flex justify-center pl-6'>
                     <button onMouseDown={()=>height>1 && setHeight(height-1)}className='rounded-md p-1.5 my-1.5 me-4 mx-1.5 bg-red-700 hover:bg-teal-800 transform transition duration-1000 hover:scale-105'><i className='fa fa-minus fa-2x hover:text-slate-400' ></i></button>
